@@ -10,7 +10,7 @@ const App = () => {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/first-page" element={<LoginForm />} />
+          <Route path="/login" element={<LoginForm />} />
           <Route
             path="/second-page"
             element={<ProtectedRoute Component={SecondPage} />}

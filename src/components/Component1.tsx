@@ -33,7 +33,7 @@ const Component1: React.FC = () => {
   }, []);
 
   function handleLogout(): void {
-    navigate("/first-page");
+    navigate("/login");
     localStorage.setItem("login", JSON.stringify(false));
   }
 

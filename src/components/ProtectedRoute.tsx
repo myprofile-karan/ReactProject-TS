@@ -12,7 +12,7 @@ const ProtectedRoute = (props: any) => {
       );
 
       if (!isLoggedIn) {
-        await navigate("/first-page");
+        await navigate("/login");
         alert("please Login first!");
       }
     }
