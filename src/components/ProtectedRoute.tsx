@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 const ProtectedRoute = (props: any) => {
   const { Component } = props;
-  const navigate = useNavigate();
+  const navigate = useNavigate();  
 
   useEffect(() => {
     async function fun(): Promise<void> {

@@ -3,6 +3,7 @@ import "./App.css";
 import LoginForm from "./pages/FIrstPage";
 import SecondPage from "./pages/SecondPage";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Home from "./pages/Home";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
 
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<ProtectedRoute Component={Home} />}  />
           <Route path="/login" element={<LoginForm />} />
           <Route
             path="/second-page"
