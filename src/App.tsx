@@ -11,7 +11,7 @@ const App = () => {
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<ProtectedRoute Component={Home} />}  />
+          <Route path="/" element={<Home />}  />
           <Route path="/login" element={<LoginForm />} />
           <Route
             path="/second-page"
